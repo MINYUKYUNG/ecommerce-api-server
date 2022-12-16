@@ -1,0 +1,13 @@
+GET http://localhost:4000
+
+###
+GET http://localhost:4000/products?sort=desc
+
+###
+GET http://localhost:4000/products/1
+
+###
+GET http://localhost:4000/products/category
+
+###
+GET http://localhost:4000/products/category/men's clothing
