@@ -17,12 +17,21 @@ const getAllProducts = async (req, res) => {
       'count',
     ],
     order: [
-      ['id', orderBy]
+      ['id', orderBy],
     ],
   });
-  
-  const result = productLists.map(product => {
-    const { id, title, price, description, category, image, rate, count } = product;
+
+  const result = productLists.map((product) => {
+    const {
+      id,
+      title,
+      price,
+      description,
+      category,
+      image,
+      rate,
+      count,
+    } = product;
     return {
       id, title, price, description, category, image, rating: { rate, count },
     };
@@ -51,7 +60,16 @@ const getProduct = async (req, res) => {
   });
 
   if (product) {
-    const { id, title, price, description, category, image, rate, count } = product;
+    const {
+      id,
+      title,
+      price,
+      description,
+      category,
+      image,
+      rate,
+      count,
+    } = product;
     const result = {
       id, title, price, description, category, image, rating: { rate, count },
     };
@@ -79,13 +97,22 @@ const getCategoryProducts = async (req, res) => {
       category: categoryName,
     },
     order: [
-      ['id', orderBy]
+      ['id', orderBy],
     ],
   });
 
   if (productLists.length) {
-    const result = productLists.map(product => {
-      const { id, title, price, description, category, image, rate, count } = product;
+    const result = productLists.map((product) => {
+      const {
+        id,
+        title,
+        price,
+        description,
+        category,
+        image,
+        rate,
+        count,
+      } = product;
       return {
         id, title, price, description, category, image, rating: { rate, count },
       };

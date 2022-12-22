@@ -1,12 +1,19 @@
 # 쇼핑몰 상품 데이터베이스
 
-## 배포 링크
+## 목차
+1. [배포 링크](#배포-링크)
+2. [기술 스택](#기술-스택)
+3. [About project](#about-project)
+4. [실행 방법](#실행-방법)
+5. [디렉토리 구조](#디렉토리-구조)
 
+## 배포 링크
+https://mmm-api.chloemin.com/products
 <br/>
 <br/>
 
 ## 기술 스택
-- SQL + MySQL
+- MySQL (SQL)
 - Express (Node.js)
 - Sequelize
 <br/>
@@ -27,7 +34,7 @@
           "price": 13,
           "description": "95%Cotton,5%Spandex, Features: Casual, Short Sleeve, Letter Print,V-Neck,Fashion Tees, The fabric is soft and has some stretch., Occasion: Casual/Office/Beach/School/Home/Street. Season: Spring,Summer,Autumn,Winter.",
           "category": "women's clothing",
-          "image": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg",
+          "image": "https://mmm-api.chloemin.com/assets/productImage20.jpg",
           "rating": {
             "rate": 4,
             "count": 145
@@ -39,7 +46,7 @@
           "price": 8,
           "description": "100% Polyester, Machine wash, 100% cationic polyester interlock, Machine Wash & Pre Shrunk for a Great Fit, Lightweight, roomy and highly breathable with moisture wicking fabric which helps to keep moisture away, Soft Lightweight Fabric with comfortable V-neck collar and a slimmer fit, delivers a sleek, more feminine silhouette and Added Comfort",
           "category": "women's clothing",
-          "image": "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg",
+          "image": "https://mmm-api.chloemin.com/assets/productImage19.jpg",
           "rating": {
             "rate": 5,
             "count": 146
@@ -57,7 +64,7 @@
         "price": 110,
         "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
         "category": "men's clothing",
-        "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+        "image": "https://mmm-api.chloemin.com/assets/productImage1.jpg",
         "rating": {
           "rate": 4,
           "count": 120
@@ -74,7 +81,7 @@
           "price": 16,
           "description": "The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
           "category": "men's clothing",
-          "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+          "image": "https://mmm-api.chloemin.com/assets/productImage4.jpg",
           "rating": {
             "rate": 2,
             "count": 430
@@ -86,7 +93,7 @@
           "price": 56,
           "description": "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
           "category": "men's clothing",
-          "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+          "image": "https://mmm-api.chloemin.com/assets/productImage3.jpg",
           "rating": {
             "rate": 5,
             "count": 500
@@ -112,8 +119,8 @@ npm run start
 ```
 <br/>
 
-## 폴더 구조
-| 폴더 | 구분 |
+## 디렉토리 구조
+| 디렉토리 | 구분 |
 | -- | -- |
 | config | 데이터베이스(DB) 접속에 관한, 각종 설정이 들어있는 디렉토리 |
 | controllers | 데이터를 컨트롤하는 함수들이 있는 파일들이 들어있는 디렉토리 |
@@ -122,3 +129,4 @@ npm run start
 | routers | 기능별로 url 주소를 연결시킨 라우터 파일이 들어있는 디렉토리 |
 | seeders | 테이블에 넣을 기본 데이터 파일들이 들어있는 디렉토리 |
 <br/>
+
