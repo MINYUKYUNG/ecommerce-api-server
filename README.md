@@ -8,7 +8,7 @@
 5. [디렉토리 구조](#디렉토리-구조)
 
 ## 배포 링크
-https://mmm-api.chloemin.com/products
+- https://mmm-api.chloemin.com/products
 <br/>
 <br/>
 
@@ -21,11 +21,16 @@ https://mmm-api.chloemin.com/products
 ## About project
 1. 쇼핑몰 상품 데이터베이스, API 서버 구현하기
 
-2. 기능 구현
-    - 상품 관리 : 전체 상품 조회, 개별 상품 조회, 카테고리별 상품 조회
+2. 기능 구현  
+        - 상품 관리 : 전체 상품 조회, 개별 상품 조회, 카테고리별 상품 조회
 
-3. 서비스 화면 미리보기
-    - products API
+3. 프로젝트 구성  
+        - 핵심 비즈니스 로직을 작성하는 컨트롤러와 페이지 경로를 설정하는 라우터를 분리하여, 프로젝트 디렉토리 구성  
+        - AWS EC2를 통한 웹 서버 구축, 배포  
+        - API 기능과 핵심 비즈니스 로직에 대한 통합 테스트
+
+4. 서비스 화면 미리보기  
+- products API  
     ```json
       [
         {
@@ -56,7 +61,7 @@ https://mmm-api.chloemin.com/products
       ]
     ```
 
-    - products/1 API
+- products/1 API  
     ```json
       {
         "id": 1,
@@ -72,7 +77,7 @@ https://mmm-api.chloemin.com/products
       }
     ```
     
-    - products/category/men's clothing  API
+- products/category/men's clothing  API
     ```json
       [
         {
@@ -106,17 +111,17 @@ https://mmm-api.chloemin.com/products
 
 ## 실행 방법
 1. repository clone
-```
-$ git clone https://github.com/MINYUKYUNG/ecommerce-api-server.git
-```
+    ```
+    $ git clone https://github.com/MINYUKYUNG/ecommerce-api-server.git
+    ```
 2. dependencies install
-```
-npm install
-```
+    ```
+    npm install
+    ```
 3. project start
-```
-npm run start
-```
+    ```
+    npm run start
+    ```
 <br/>
 
 ## 디렉토리 구조
